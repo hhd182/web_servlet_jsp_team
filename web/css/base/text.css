@@ -1,0 +1,19 @@
+.text-success {
+  color: var(--color-primary);
+}
+
+.text-error {
+  color: var(--color-error);
+}
+
+.text-warning {
+  color: var(--color-warning);
+}
+
+.text-info {
+  color: var(--color-info);
+}
+
+.text-center {
+  text-align: center;
+}

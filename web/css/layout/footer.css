@@ -1,0 +1,85 @@
+footer {
+    background-color: var(--color-secondary);
+}
+
+footer a {
+    color: black;
+    transition: color var(--animation-time-default) ease;
+}
+
+footer a:hover {
+    color: var(--color-primary);
+}
+
+.footer-widget-title {
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 0px;
+}
+
+.widget {
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.widget-social {
+    display: flex;
+    column-gap: 16px;
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+.widget-address {
+    margin: 25px 0px;
+}
+
+.widget-address h4 {
+    margin: 0px;
+}
+
+.widget-address p {
+    color: var(--color-primary);
+}
+
+.widget-info p {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.widget-info i{
+    color: var(--color-primary);
+}
+
+.widget-link li{
+    margin-top: 16px;
+}
+
+.widget-form .btn-primary {
+    margin-top: 16px;
+}
+
+.footer-copyright {
+    background-color: #212832;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    color: white;
+}
+
+.footer-copyright .row {
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.footer-copyright a {
+    color: white;
+}
+
+.copyright-link a ~ a::before{
+    content: "*";
+    padding: 0px 8px;
+}
+
+.copyright-text span, .copyright-text a {
+    color: var(--color-primary);
+}

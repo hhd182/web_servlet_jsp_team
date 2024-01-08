@@ -1,0 +1,14 @@
+:root{
+    --color-primary: #309255;
+    --color-primary-hover: #212832;
+    --color-secondary: #e7f8ee;
+    --color-success: #198754;
+    --color-error: #E61D1D;
+    --color-warning: #F49342;
+    --color-info: #009eeb;
+    --color-subtext: #52565b;
+    --color-border: rgba(48,146,85,0.2);
+    --height-default: 60px;
+    --border-radius-default: 10px;
+    --animation-time-default: 0.3s;
+}

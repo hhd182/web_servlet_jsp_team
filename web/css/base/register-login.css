@@ -1,0 +1,66 @@
+.register-login-wrapper {
+    padding: 70px;
+    padding-top: 20px;
+    border: 1px solid rgba(48,146,85,0.2);
+    border-radius: 10px;
+}
+
+.register-login-images {
+    background-color: #e7f8ee;
+    padding: 45px 40px 0;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.register-login-form {
+    max-width: 400px;
+    margin-left: auto;
+    margin-top: 45px;
+}
+
+.register-login-form .title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 1.4;
+    padding-bottom: 10px;
+}
+
+.register-login-form .form-wrapper {
+    padding-top: 30px;
+}
+
+.single-form {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+.register-login-images .shape-1 {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background-color: #309255;
+    top: 50px;
+    left: 20%;
+    position: absolute;
+    z-index: -1;
+}
+
+.forget-pass{
+    margin-top: 10px;
+    text-align: right;
+    color: rgb(0, 0, 255);
+}
+
+.register-login-form-label{
+    margin-bottom: 30px;
+}
+
+.required-field {
+    color: red;
+}

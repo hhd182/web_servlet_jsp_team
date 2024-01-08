@@ -1,0 +1,25 @@
+.breadcrumb {
+    display: flex;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.breadcrumb li~li::before {
+    content: "//";
+    margin: 0px 8px;
+    color: black;
+}
+
+.breadcrumb a {
+    color: black;
+    transition: color var(--animation-time-default) ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--color-primary);
+}
+
+.breadcrumb .breadcrumb-active {
+    color: var(--color-primary);
+    pointer-events: none;
+}

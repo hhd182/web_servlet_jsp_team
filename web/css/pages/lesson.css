@@ -1,0 +1,94 @@
+.courses-video-playlist {
+    margin-bottom: 40px;
+}
+
+.video-content {
+    padding: 20px 60px;
+}
+
+.video-title {
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+.playlist-title {
+    padding: 25px 30px;
+    background-color: #dff0e6;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.playlist-title span {
+    color: var(--color-primary);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.accordion-item {
+    background-color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.accordion-item-active .collapsed{
+    color: var(--color-primary);
+}
+
+.accordion-item-active .collapsed::after {
+    content: "\f077";
+}
+
+.accordion-item-active .collapse {
+    display: block;
+}
+
+.collapsed {
+    display: block;
+    background-color: var(--color-secondary);
+    padding: 20px 50px 20px 30px;
+    text-align: left;
+    color: var(--color-primary-hover);
+    font-weight: 500;
+    position: relative;
+    line-height: 2rem;
+}
+
+.collapsed::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f078";
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.accordion-collapse .link{
+    color: black;
+    border-top: 1px solid var(--color-border);
+    padding: 16px 30px 16px 80px;
+    display: block;
+    position: relative;
+}
+
+.accordion-collapse .link::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 500;
+    content: "\f111";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    color: var(--color-primary);
+}
+
+.accordion-collapse .link.active{
+    color: var(--color-primary);
+}
+
+.accordion-collapse .link.active::before{
+    content: "\f192";
+}
+
+.collapse {
+    display: none;
+}

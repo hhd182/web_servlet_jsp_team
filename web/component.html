@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Component</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      background-color: rgb(240, 240, 240);
+    }
+
+    /* Cái css card này chỉ để trưng bày các component thôi chứ đừng đưa vào project */
+    .card-display-component {
+      background-color: white;
+      border-radius: var(--border-radius-default);
+      padding: 20px 32px;
+      height: 100%;
+      box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    .card-display-component-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+    }
+
+    .card-display-component-title {
+      margin-top: 28px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="grid wide header">
+      <a href="/">
+        <img src="./assets/logo.png" alt="Logo" />
+      </a>
+      <nav>
+        <a class="nav-active" href="/">Trang chủ</a>
+        <a href="/">Khóa học</a>
+        <a href="/">Blog</a>
+        <a href="/">Liên hệ</a>
+      </nav>
+      <!-- <div class="login-nav">
+          <a href="/">
+            <img
+              class="avatar"
+              src="https://placehold.co/100x100"
+              alt="image"
+            />
+          </a>
+        </div> -->
+      <div class="login-nav">
+        <a href="/"> Đăng nhập </a>
+        <a href="/">
+          <button class="btn btn-outline-primary">Đăng ký</button>
+        </a>
+      </div>
+      <i class="menu-btn fa-solid fa-bars" onclick="openOverlay('header-mobile')"></i>
+    </div>
+  </header>
+  <div id="header-mobile" class="overlay">
+    <div class="header-mobile">
+      <div class="login-nav avatar-container">
+        <img class="avatar" src="https://placehold.co/100x100" alt="image" />
+        <div>
+          <div>Trần Doãn Đô</div>
+          <a href="/">Xem trang cá nhân</a>
+        </div>
+      </div>
+      <!-- <div class="login-nav">
+          <a href="/">
+            <button class="btn btn-fullwidth btn-primary">Đăng nhập</button>
+          </a>
+          <a href="/">
+            <button class="btn btn-fullwidth btn-outline-primary">
+              Đăng ký
+            </button>
+          </a>
+        </div> -->
+      <nav>
+        <a class="nav-active" href="/">Trang chủ</a>
+        <a href="/">Khóa học</a>
+        <a href="/">Blog</a>
+        <a href="/">Liên hệ</a>
+      </nav>
+    </div>
+  </div>
+  <div class="grid wide">
+    <h1 class="text-center">Button</h1>
+    <div class="row">
+      <div class="col l-4 c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <button class="btn btn-primary">Button main</button>
+          </div>
+          <div class="card-display-component-title">Nút chính</div>
+        </div>
+      </div>
+      <div class="col l-4 c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <button class="btn btn-secondary">Button main</button>
+          </div>
+          <div class="card-display-component-title">Nút chính 2</div>
+        </div>
+      </div>
+      <div class="col l-4 c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <button class="btn btn-outline-primary">Button outline</button>
+          </div>
+          <div class="card-display-component-title">Nút có viền</div>
+        </div>
+      </div>
+      <div class="col l-4 c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <button class="btn btn-outline-secondary">Button outline</button>
+          </div>
+          <div class="card-display-component-title">Nút có viền 2</div>
+        </div>
+      </div>
+      <div class="col l-4 c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <button class="btn btn-link">Button link</button>
+          </div>
+          <div class="card-display-component-title">Nút link</div>
+        </div>
+      </div>
+      <div class="col l-4 c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <button class="btn btn-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="card-display-component-title">Nút icon</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid wide">
+    <h1 class="text-center">Input</h1>
+    <div class="row">
+      <div class="col l-6 c-12">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <input class="input" placeholder="placeholder" type="text" />
+          </div>
+          <div class="card-display-component-title">Trường thường</div>
+        </div>
+      </div>
+      <div class="col l-6 c-12">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <div class="input-container">
+              <input class="input" placeholder="placeholder" type="text" />
+              <button class="btn input-ic btn-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-display-component-title">Trường có nút</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid wide">
+    <h1 class="text-center">Grid</h1>
+    <p class="text-center">
+      Sử dụng để chia lưới, responsive. Có thể co kéo màn hình để nhìn thấy rõ
+      hơn
+    </p>
+    <div class="row">
+      <div class="col l-2 m-4 c-6">
+        <div class="card-display-component text-center">Ô số 1</div>
+      </div>
+      <div class="col l-2 m-4 c-6">
+        <div class="card-display-component text-center">Ô số 2</div>
+      </div>
+      <div class="col l-2 m-4 c-6">
+        <div class="card-display-component text-center">Ô số 3</div>
+      </div>
+      <div class="col l-2 m-4 c-6">
+        <div class="card-display-component text-center">Ô số 4</div>
+      </div>
+      <div class="col l-2 m-4 c-6">
+        <div class="card-display-component text-center">Ô số 5</div>
+      </div>
+      <div class="col l-2 m-4 c-6">
+        <div class="card-display-component text-center">Ô số 6</div>
+      </div>
+    </div>
+  </div>
+  <div class="grid wide">
+    <h1 class="text-center">Avatar</h1>
+    <p class="text-center">Sử dụng hiển thị ảnh đại diện hình tròn</p>
+    <div class="row">
+      <div class="col c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <img class="avatar" src="https://placehold.co/100x100" alt="image" />
+          </div>
+          <div class="card-display-component-title">Avatar</div>
+        </div>
+      </div>
+      <div class="col c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <img class="avatar-big" src="https://placehold.co/100x100" alt="image" />
+          </div>
+          <div class="card-display-component-title">Avatar lớn</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid wide">
+    <h1 class="text-center">Progress</h1>
+    <p class="text-center">Sử dụng khi tải dữ liệu</p>
+    <div class="row">
+      <div class="col c-12">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <div class="loading-spinner"></div>
+          </div>
+          <div class="card-display-component-title">Loading</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid wide">
+    <h1 class="text-center">Breadcrumbs</h1>
+    <p class="text-center">
+      Khi vào 1 trang nào đó thì cần Breadcrumbs để thể hiện mối quan hệ phân
+      cấp giữa các trang
+    </p>
+    <div class="row">
+      <div class="col c-12">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <ul class="breadcrumb">
+              <li><a href="/">Home</a></li>
+              <li><a href="/">About</a></li>
+              <li>
+                <a class="breadcrumb-active" href="/">HelloWorld</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-display-component-title">
+            Đường dẫn Breadcrumbs
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid wide">
+    <h1 class="text-center">Tooltip</h1>
+    <p class="text-center">
+      Sử dụng để hiển thị tên chi tiết khi hover vào 1 từ viết tắt hay 1 icon
+      không có label
+    </p>
+    <div class="row">
+      <div class="col l-3 c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <div data-tooltip="Phía trên" data-top-tooltip>Top</div>
+          </div>
+          <div class="card-display-component-title">Tooltip phía trên</div>
+        </div>
+      </div>
+      <div class="col l-3 c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <div data-tooltip="Phía phải" data-right-tooltip>Right</div>
+          </div>
+          <div class="card-display-component-title">Tooltip phía phải</div>
+        </div>
+      </div>
+      <div class="col l-3 c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <div data-tooltip="Phía dưới" data-bottom-tooltip>Bottom</div>
+          </div>
+          <div class="card-display-component-title">Tooltip phía dưới</div>
+        </div>
+      </div>
+      <div class="col l-3 c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <div data-tooltip="Phía trái" data-left-tooltip>left</div>
+          </div>
+          <div class="card-display-component-title">Tooltip phía trái</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid wide">
+    <h1 class="text-center">Dialog</h1>
+    <p class="text-center">
+      Sử dụng để hiển thị các cửa sổ cần phải xác nhận
+    </p>
+    <div class="row">
+      <div class="col c-12">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <button class="btn btn-primary" onclick="openOverlay('dialog')">
+              Nhấn vào!
+            </button>
+          </div>
+          <div class="card-display-component-title">Dialog</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid wide">
+    <h1 class="text-center">Toast Message</h1>
+    <p class="text-center">Sử dụng để thông báo</p>
+    <div class="row">
+      <div class="col c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <button class="btn btn-primary" onclick="openToast('toast-success')">
+              Nhấn vào!
+            </button>
+          </div>
+          <div class="card-display-component-title">Thành công</div>
+        </div>
+      </div>
+      <div class="col c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <button class="btn btn-primary" onclick="openToast('toast-error')">
+              Nhấn vào!
+            </button>
+          </div>
+          <div class="card-display-component-title">Báo lỗi</div>
+        </div>
+      </div>
+      <div class="col c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <button class="btn btn-primary" onclick="openToast('toast-warning')">
+              Nhấn vào!
+            </button>
+          </div>
+          <div class="card-display-component-title">Cảnh bảo</div>
+        </div>
+      </div>
+      <div class="col c-6">
+        <div class="card-display-component">
+          <div class="card-display-component-img">
+            <button class="btn btn-primary" onclick="openToast('toast-info')">
+              Nhấn vào!
+            </button>
+          </div>
+          <div class="card-display-component-title">Thông tin</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="grid widget wide">
+      <div class="row">
+        <div class="col l-3 m-6 c-12">
+          <a href="#"><img src="././assets/logo.png" alt="Logo" /></a>
+
+          <div class="widget-address">
+            <h4>Km 10, Trần Phú</h4>
+            <p>Hà Đông, Hà Nội</p>
+          </div>
+
+          <ul class="widget-info">
+            <li>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:ptit@gmail.com">ptit@gmail.com</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:9702621413">(970) 262-1413</a>
+              </p>
+            </li>
+          </ul>
+
+          <ul class="widget-social">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l-3 m-6 c-12">
+          <h4 class="footer-widget-title">Loại khóa học</h4>
+          <ul class="widget-link">
+            <li><a href="#">Văn bản sáng tạo</a></li>
+            <li><a href="#">Phim & Video</a></li>
+            <li><a href="#">Thiết kế đồ họa</a></li>
+            <li><a href="#">Thiết kế UI/UX</a></li>
+            <li><a href="#">Phân tích kinh doanh</a></li>
+            <li><a href="#">Tiếp thị</a></li>
+          </ul>
+        </div>
+        <div class="col l-3 m-6 c-12">
+          <h4 class="footer-widget-title">Truy cập nhanh</h4>
+          <ul class="widget-link">
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Thảo luân</a></li>
+            <li><a href="#">Điều khoản - điều kiện</a></li>
+            <li><a href="#">Hỗ trợ khách hàng</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+          </ul>
+        </div>
+        <div class="col l-3 m-6 c-12">
+          <h4 class="footer-widget-title">Đăng ký</h4>
+
+          <div>
+            <p>Đăng ký để được tư vấn miễn phí!</p>
+
+            <div class="widget-form">
+              <form action="#">
+                <input class="input" placeholder="Điền email vào đây" />
+                <button class="btn btn-primary">Đăng ký ngay</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="grid wide">
+        <div class="row">
+          <div class="copyright-link">
+            <a href="#">Điều khoản dịch vụ</a>
+            <a href="#">Chính sách</a>
+            <a href="#">Sơ đồ trang</a>
+            <a href="#">Bảo mật</a>
+          </div>
+          <div class="copyright-text">
+            © 2023 <span> Edule </span> Tạo bởi
+            <a href="#">Nhóm 4 - 9</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="overlay" id="dialog">
+    <div class="modal">
+      <i class="close-icon fa-solid fa-xmark"></i>
+      <h3 class="modal-title">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, sunt
+        a excepturi vel, eaque est, dicta natus tempora unde esse id corporis
+        maxime. Temporibus architecto repudiandae esse nulla, id accusamus?
+      </h3>
+      <div class="modal-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ullam
+        vitae quisquam repudiandae obcaecati
+      </div>
+      <div class="modal-action">
+        <button class="btn btn-outline-primary">Button 1</button>
+        <button class="btn btn-primary">Button 2</button>
+      </div>
+    </div>
+  </div>
+  <div class="toast" id="toast-success">
+    <i class="sucess-icon fa-solid fa-circle-check"></i>
+    <div class="toast-message">
+      <span class="toast-title text-success">Thành công!</span> Công việc đã
+      bị xóa.
+    </div>
+    <i class="close-icon close-icon fa-solid fa-xmark"></i>
+  </div>
+  <div class="toast" id="toast-error">
+    <i class="error-icon fa-solid fa-circle-exclamation"></i>
+    <div class="toast-message">
+      <span class="toast-title text-error">Lỗi!</span> Không thể cập nhật dữ
+      liệu. Vui lòng kiểm tra lại.
+    </div>
+    <i class="close-icon fa-solid fa-xmark"></i>
+  </div>
+  <div class="toast" id="toast-warning">
+    <i class="warning-icon fa-solid fa-triangle-exclamation"></i>
+    <div class="toast-message">
+      <span class="toast-title text-warning">Cảnh báo!</span> Dữ liệu của bạn
+      đã bị thay đổi bởi người dùng khác.
+    </div>
+    <i class="close-icon fa-solid fa-xmark"></i>
+  </div>
+  <div class="toast" id="toast-info">
+    <i class="info-icon fa-solid fa-circle-info"></i>
+    <div class="toast-message">
+      <span class="toast-title text-info">Thông tin!</span> Bạn nên đọc kỹ nội
+      dung trước khi gửi phê duyệt.
+    </div>
+    <i class="close-icon fa-solid fa-xmark"></i>
+  </div>
+  <script src="./js/toastAndModel.js"></script>
+</body>
+
+</html>

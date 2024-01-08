@@ -1,0 +1,18 @@
+.lesson-part {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.lesson-part .input {
+    flex: 1;
+}
+.lesson-part-container {
+    margin: 40px 0px;
+}
+.lesson-list {
+    margin: 20px 0px 20px 60px;
+    list-style: circle;
+}
+.lesson-list li {
+    line-height: 32px;
+}

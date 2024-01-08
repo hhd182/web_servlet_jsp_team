@@ -1,0 +1,55 @@
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  animation: fadeIn 0.25s ease;
+  z-index: 50;
+}
+
+.modal {
+  padding: 40px;
+  width: 600px;
+  background-color: white;
+  box-shadow: 0px 4px 16px rgba(23, 27, 42, 0.24);
+  border-radius: var(--border-radius-default);
+  max-width: 80%;
+  max-height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+}
+
+.modal .close-icon {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.modal-content {
+  margin: 40px 0px;
+}
+
+.modal-action {
+  display: flex;
+  justify-content: right;
+  column-gap: 16px;
+}
+
+.modal-title {
+  padding-right: 28px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Số dòng giới hạn */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -1,0 +1,67 @@
+table {
+    border-collapse: collapse;
+    width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-size: 20px;
+}
+
+.addNewBtn{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.btnContainer{
+    display: flex;
+    gap:4px;
+}
+
+.btnL{
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.btnD{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.btnD:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+.btnD>a{
+    text-decoration: none;
+    color: white;
+}
+
+.btnL:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+.btnL a{
+    text-decoration: none;
+    color: white;
+}
